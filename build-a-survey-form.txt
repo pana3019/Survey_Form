@@ -1,0 +1,200 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="styles.css" />
+
+<head>
+  <div class="container">
+  <div class="box">
+  <title>Encuesta Anual de Cteam</title>
+  
+</head>
+  <h1 id="title">
+    <u>Encuesta Anual de <a href="https://www.c-team.com.ar"> CTeam</a> </u>
+  </h1>
+
+  <p id="description">Gracias por tomar el tiempo para resolver la encuesta</p>
+  
+<form id="survey-form">
+  <fieldset>
+    <label id="name-label">
+      <u>Nombre:</u> <input type="text" id="name" name="first-name" placeholder="Ingrese su nombre aquí" required />
+    </label>
+
+    <label id="lastname-label">
+      <u>Apellido:</u> <input type="text" name="last-name" required placeholder="Ingrese su apellido aquí" />
+    </label>
+
+    <label id="email-label">
+      <u>Email:</u> <input type="email" id="email" name="email" placeholder="Ingrese su email aquí" required />
+    </label>
+
+    <label id="number-label">
+      <u>Edad:</u> <input type="number" id="number" name="age" min="15" max="120" required placeholder="Ingrese su edad aquí"/>
+    </label>
+    
+    <br>
+    <label>
+      <u>Lenguaje de preferencia:</u>
+      <select id="dropdown" name="referrer">
+      <option value="">(Elija una opcion)</option>
+      <option value="1">JAVA</option>
+      <option value="2">C++</option>
+      <option value="3">HTML</option>
+      <option value="4">Otro</option>
+      </select>
+    </label>
+<br>
+    <label name="Recomendacion">
+    <u>Recomendaria el curso de Programacion :</U>
+    </label>
+
+     <label>
+       <input class="input-radio" type="radio" name="reco" value="1" checked /> 
+        Si
+    </label>
+
+     <label>
+       <input class="input-radio" type="radio" name="reco" value="2" /> 
+      No
+    </label>
+
+     <label>
+       <input class="input-radio" type="radio"  name="reco" value="3"/> 
+        Talvez
+    </label>
+
+<br>
+  <label name="empresa">
+    <u>Que incorporaria en el curso:</U>
+    </label>
+ 
+ <label><input class="input-check box" type="checkbox" value="1"/> 
+  Tiempo de descanso</label>
+  
+  <label>
+    <input type="checkbox" class="inline" value="2" /> 
+      Comida incluida
+  </label>
+    
+      <input type="checkbox" class="inline" value="3" /> 
+      Transporte privado
+    </label>
+
+    <label>
+      <input type="checkbox" class="inline" value="4"/> 
+      Sectores recreativos
+    </label>
+
+    <label>
+      <input type="checkbox" class="radio-inline" value="5" /> 
+   Conferencias de apoyo
+    </label>
+
+<label>
+  <u>Algun comentario extra que desee agregar:</u>
+   <textarea name="bio" rows="4" cols="40" placeholder="Escriba aquí"></textarea>
+  </label>
+
+  </fieldset>
+
+   <input id="submit" type="submit" value="Submit" />
+   
+</form>
+
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+   text-shadow: 1px 0px #000;background-image:url(https://media-exp1.licdn.com/dms/image/C4E1BAQGNoVUb9Lxgqw/company-background_10000/0/1550769900208?e=2147483647&v=beta&t=C2GJE5rlPitQFGTxWzCmX-7xKBA5JDNdB7KNXBaxwRQ) ;
+  background-position: center;
+	color: #f5f6f0;
+	font-size: 16px;  
+}
+
+.box { 
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  font-family: Times New Roman;
+  text-align: auto;
+  line-height: auto;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  max-width: 60%;
+  max-height: 20%;
+  padding: 20px 40px;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%; 
+}
+
+h1,p{
+text-align: center;
+text-size: auto;
+ text-shadow: 3px 1px #000;
+}
+
+form {
+  width: auto;
+	max-width: 500px;
+	min-width: 300px;
+	margin: auto;
+  padding-bottom: auto;
+}
+
+label{
+  display: block;
+	margin: 0.5rem 0;
+}
+
+fieldset {
+  border: none;
+	padding: 1rem 1;
+}
+
+input[type="text"],[type="email"],[type="number"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  background:black ;
+  color:white;
+  min-width: 300px;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  color: white;
+  background-color: black;
+  border-color: white;
+  min-width: 300px;
+}
+
+textarea{
+  background:black;
+}
+
+** end of undefined **
+
